@@ -15,15 +15,7 @@ google-auth==1.11.2
 google-auth-oauthlib==0.4.1
 google-pasta==0.1.8
 h5py==2.10.0
-HeapDict==1.0.1
-html5lib==1.0.1
-idna==2.8
-imageio==2.6.0
-imagesize==1.1.0
-importlib-metadata==0.23
-ipykernel==5.1.2
-ipython==7.8.0
-ipython-genutils==0.2.0
+
 Jinja2==2.11.2
 json5==0.8.5
 jsonschema==3.0.2
@@ -31,7 +23,6 @@ joblib==0.16.0
 Keras==2.4.3
 Keras-Applications 
 Keras-Preprocessing==1.1.2
-lazy-object-proxy==1.4.2
 nbconvert==5.6.0
 nbformat==4.4.0
 networkx==2.3
@@ -47,4 +38,8 @@ scikit-learn==0.21.3
 scipy==1.4.1
 Werkzeug==0.16.1
 
+tensorboard==2.2.2
+tensorboard-plugin-wit==1.7.0
+tensorflow-cpu==2.2.1
+tensorflow-estimator==2.2.0
 
