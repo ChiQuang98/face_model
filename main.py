@@ -1,12 +1,9 @@
 from flask import Flask, request, render_template, jsonify
 import json
-# from Service import *
-from model import *
+from model import load_model,load_Labels,face_detector_by_image,load_Pretrain_model,load_model_face_detector
 from sklearn.preprocessing import LabelEncoder
-# import pandas as pd
+import numpy as np
 import json
-import threading
-# implementFaceDetect(model,classifier_model,vgg_face)
 from flask import Flask, request, render_template
 model_fd = load_model_face_detector()
 classify_model = load_model()
