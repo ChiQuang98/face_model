@@ -1,18 +1,15 @@
-import tensorflow as tf
-from tensorflow.keras.applications import imagenet_utils
-from tensorflow.keras.preprocessing.image import img_to_array
-from tensorflow.keras.preprocessing.image import load_img
+
+import cv2
 import numpy as np
-import tensorflow.keras.backend as K
-from tensorflow import keras
+from keras.applications import imagenet_utils
 from keras.layers.core import Dense
 from keras.layers.core import Dropout
 from keras.layers.core import Flatten
 from keras.models import Model
-import cv2
-from keras.applications import VGG16
-from sklearn.preprocessing import LabelEncoder
+from keras.preprocessing.image import img_to_array
 from keras_vggface.vggface import VGGFace
+from sklearn.preprocessing import LabelEncoder
+
 
 def load_Pretrain_model():
     # Load model VGG 16 của ImageNet dataset, include_top=False để bỏ phần Fully connected layer ở cuối.
@@ -20,7 +17,6 @@ def load_Pretrain_model():
     # model.summary()
     return model
 def load_model():
-    from tensorflow.keras.applications.resnet50 import preprocess_input
     # train_data, val_data = loadData("train",image_path,labels, val_split=0.2)
     # restnet = ResNet50(include_top=False, weights='imagenet', input_shape=(224,224,3))
     baseModel = VGGFace(include_top=False, input_shape=(224, 224, 3), pooling='avg', model='resnet50')
